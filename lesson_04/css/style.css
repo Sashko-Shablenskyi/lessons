@@ -1,0 +1,113 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-2_5 {
+    line-height: 2.5;
+}
+
+.header,
+.footer {
+    font-size: 24px;
+    line-height: 4;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #de1818;
+    text-transform: lowercase;
+}
+
+.header span,
+.footer span {
+    font-family: 'Spectre Collector', fantasy;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #de1818;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #de1818;
+}
+
+.header,
+.footer,
+.title,
+.subtitle {
+    font-family: "Pacifico", cursive;
+}
+
+.title {
+    font-size: 20px;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.subtitle {
+    font-size: 24px;
+    text-align: right;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: #00ffff;
+    text-shadow: 1px 1px 1px #00ffff;
+}
+
+/* ------------------------- */
+
+.task-one {
+    font-family: 'SofiaSans', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    word-spacing: 10px;
+}
+
+.fw-thin {
+    font-weight: 100;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+.task-one .text-align-center a {
+    color: #ff00ff;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #4512b2;
+}
+
+.article-title {
+    font-size: 24px;
+    text-transform: capitalize;
+    text-shadow: -150px -25px 3px #a51111,
+        150px -25px 3px #19a90f,
+        -150px 25px 3px #4512b2,
+        150px 25px 3px #a711a0;
+}
+
+/* ------------------------- */
+
+.task-two {
+    font-family: "Poppin", sans-serif;
+    line-height: 1.5;
+}
+
+.task-two .bold {
+    font-size: 20px;
+    color: #1A1A1A;
+}
+
+.task-two p {
+    font-size: 18px;
+    color: #808080;
+}
