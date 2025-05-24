@@ -1,0 +1,118 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #231F8B;
+    font-size: 14px;
+}
+
+.header,
+.footer {
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #5A54F2;
+    font-size: 54px;
+}
+
+.container {
+    max-width: 1050px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.block-head {
+    margin-bottom: 70px;
+}
+
+.subtitle {
+    color: #5A54F2;
+    font-weight: 700;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+}
+
+.title,
+.description {
+    color: #FFF;
+    font-family: "Circular Std";
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+    max-width: 765px;
+}
+
+.boxes {
+    margin-bottom: 50px;
+    font-size: 0;
+}
+
+.box {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 230px;
+    padding: 35px 40px;
+    background-color: #fff;
+    margin-right: 40px;
+}
+
+.box-img {
+    width: 100%;
+    max-width: 72px;
+}
+
+.box-title {
+    color: #252B42;
+    font-family: "Circular Std";
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+}
+
+.devider {
+    height: 2px;
+    width: 50px;
+    background-color: #E74040;
+}
+
+.box-descr {
+    color: #737373;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+}
+
+.highlighted {
+    background-color: #5A54F2;
+}
+
+.highlighted h2,
+.highlighted p {
+    color: #fff;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
