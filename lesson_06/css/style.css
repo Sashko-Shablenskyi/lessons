@@ -50,7 +50,6 @@
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: #808080;
-    font-size: 14px;
     line-height: 1.5;
     padding-bottom: 25px;
 }
@@ -70,7 +69,7 @@
 }
 
 .list-item {
-    background: url('../img/check.png') left center / 20px no-repeat;
+    background: url('../img/check.png') left top / 20px no-repeat;
     padding-left: 28px;
     min-height: 20px;
 }
@@ -154,8 +153,10 @@
 
 .about-img {
     display: inline-block;
+    width: 100%;
     max-width: 524px;
-    border-radius: 240px 100px;
+    max-height: 557px;
+    border-radius: 44.7% 16.08% 42.8% 19.08% / 42.8% 18.08% 45.8% 18.08%;
     background: #A3A3A3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -176,7 +177,7 @@
     margin: 50px 0 42px;
 }
 
-.about-title span {
+.about-title strong {
     display: block;
     color: rgba(255, 255, 255, 0.95);
     font-size: 36px;
