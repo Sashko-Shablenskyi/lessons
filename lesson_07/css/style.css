@@ -4,6 +4,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #FFF;
+    line-height: 1;
 }
 
 a:focus-visible {
@@ -83,6 +84,11 @@ a:hover:focus-visible {
     padding: 61px 0 102px;
 }
 
+.faculty .container {
+    margin-bottom: -20px;
+}
+
+
 .faculty-title {
     font-size: 38px;
     font-weight: 400;
@@ -100,11 +106,16 @@ a:hover:focus-visible {
 
 .cards-wrapper {
     font-size: 0;
+    margin: 0 -20px -20px 0;
 }
 
 .card {
     display: inline-block;
+    padding: 0 20px 20px 0;
     vertical-align: top;
+}
+
+.card-inner {
     max-width: 386px;
     min-height: 476px;
     padding: 20px;
@@ -115,33 +126,31 @@ a:hover:focus-visible {
         0px 138px 83px 0px rgba(0, 0, 0, 0.05),
         0px 62px 62px 0px rgba(0, 0, 0, 0.09),
         0px 15px 34px 0px rgba(0, 0, 0, 0.10);
-    margin-right: 20px;
     font-size: 15px;
     line-height: 1.266;
 }
 
-.card:last-child {
-    margin-right: 0;
-}
-
-.card:hover {
+.card-inner:hover {
     background: #FFBE48;
 }
 
-.card>*:not(:last-child) {
+.card-inner>*:not(:last-child) {
     margin-bottom: 16px;
 }
 
 .card-img {
     width: 100%;
     max-width: 347px;
+    max-height: 265px;
+    /* тимчасово, щоб зараз не ламало верстку */
+    color: #000;
 }
 
 .card-title {
     color: #000;
     font-size: 22px;
     font-weight: 600;
-    line-height: normal;
+    line-height: 1.2;
 }
 
 .card-descr {
@@ -177,7 +186,7 @@ a:hover:focus-visible {
 }
 
 .advantages .container {
-    max-width: 518px
+    max-width: 548px
 }
 
 .advantages-title {
@@ -189,23 +198,25 @@ a:hover:focus-visible {
     font-weight: 700;
 }
 
-.advantages-descr {
-    font-size: 20px;
+.advantages-descr p {
     color: #412672;
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
-.advantages-list {
-    vertical-align: top;
+.advantages-item {
+    padding-left: 44px;
     font-size: 20px;
 }
 
 .advantages-item::before {
     content: '';
+    display: block;
     width: 29px;
     height: 29px;
     background: url(../img/done_icon.png) center/cover no-repeat;
-    vertical-align: middle;
+    margin: 0 15px -27px -44px;
+
 }
 
 .advantages-item:not(:last-child) {
