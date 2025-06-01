@@ -1,0 +1,512 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+}
+
+a:focus-visible {
+    outline: none;
+    box-shadow: 1px 1px 0 1px #412672;
+}
+
+a:hover:focus-visible {
+    box-shadow: none;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.container>* {
+    margin-bottom: 20px;
+}
+
+.container>*:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 44px;
+}
+
+.title:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+/* ----------HEARED---------- */
+
+.header {
+    color: #000;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav-item {
+    display: inline-block;
+    text-align: right;
+    font-size: 0;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav-item::after {
+    content: '';
+    height: 2px;
+    width: 75%;
+    background-color: #000;
+    opacity: 0;
+}
+
+.nav-item:hover::after {
+    opacity: 1;
+}
+
+.nav-link {
+    font-size: 24px;
+}
+
+/* ----------Faculty---------- */
+
+.faculty {
+    background-color: #412672;
+    padding: 61px 0 102px;
+}
+
+.faculty-title {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.faculty-title strong {
+    display: block;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.faculty-title:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+.cards-wrapper {
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 386px;
+    min-height: 476px;
+    padding: 20px;
+    background: #FFF;
+    box-shadow:
+        0px 384px 108px 0px rgba(0, 0, 0, 0.00),
+        0px 246px 98px 0px rgba(0, 0, 0, 0.01),
+        0px 138px 83px 0px rgba(0, 0, 0, 0.05),
+        0px 62px 62px 0px rgba(0, 0, 0, 0.09),
+        0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 1.266;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:hover {
+    background: #FFBE48;
+}
+
+.card>*:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.card-img {
+    width: 100%;
+    max-width: 347px;
+}
+
+.card-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-descr {
+    color: #4F4F4F;
+}
+
+.card-link {
+    color: #FE3F3F;
+}
+
+.card-link::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: #9e2828;
+    opacity: 0;
+}
+
+.card-link:hover {
+    color: #9e2828;
+}
+
+.card-link:hover::after {
+    opacity: 1;
+}
+
+/* ----------Advantages---------- */
+
+.advantages {
+    padding: 55px 0 42px;
+    color: #4F4F4F;
+}
+
+.advantages .container {
+    max-width: 518px
+}
+
+.advantages-title {
+    color: #412672;
+    font-size: 34px;
+}
+
+.advantages-title strong {
+    font-weight: 700;
+}
+
+.advantages-descr {
+    font-size: 20px;
+    color: #412672;
+    font-size: 22px;
+}
+
+.advantages-list {
+    vertical-align: top;
+    font-size: 20px;
+}
+
+.advantages-item::before {
+    content: '';
+    width: 29px;
+    height: 29px;
+    background: url(../img/done_icon.png) center/cover no-repeat;
+    vertical-align: middle;
+}
+
+.advantages-item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+/* ----------Game---------- */
+
+.game {
+    padding: 50px 0;
+}
+
+.game-title {
+    color: #412672;
+    text-transform: uppercase;
+}
+
+.game-wrapper {
+    width: 100%;
+    height: 600px;
+    background-color: #c2c2c2;
+}
+
+.game-wrapper>* {
+    background-color: #e4e462;
+    text-align: center;
+    padding: 2px;
+    visibility: hidden;
+}
+
+.rect-0 {
+    width: 100px;
+    height: 50px;
+    border-radius: 0 0 15px 0;
+    visibility: visible;
+}
+
+.rect-0:hover+.rect-1 {
+    visibility: visible;
+}
+
+.rect-1 {
+    height: 80px;
+    width: 60px;
+    margin: -2px 0 0 10px;
+}
+
+.rect-1:hover {
+    visibility: visible;
+}
+
+.rect-1:hover+.rect-2 {
+    visibility: visible;
+}
+
+.rect-2 {
+    margin: -2px 0 0 10px;
+    width: 150px;
+    height: 25px;
+    border-radius: 0 0 0 15px;
+}
+
+.rect-2:hover {
+    visibility: visible;
+}
+
+.rect-2:hover+.rect-3 {
+    visibility: visible;
+}
+
+.rect-3 {
+    height: 100px;
+    width: 25px;
+    margin: -100px 0 0 158px;
+    border-radius: 15px 0 15px 0;
+}
+
+.rect-3:hover {
+    visibility: visible;
+}
+
+.rect-3:hover+.rect-4 {
+    visibility: visible;
+}
+
+.rect-4 {
+    width: 400px;
+    margin: -100px 0 0 180px;
+    background-color: transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 400px solid #e4e462;
+}
+
+.rect-4:hover {
+    visibility: visible;
+}
+
+.rect-4:hover+.rect-5 {
+    visibility: visible;
+}
+
+.rect-5 {
+    width: 400px;
+    background-color: transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 400px solid #e4e462;
+    margin: -23px 0 0 573px;
+}
+
+.rect-5:hover {
+    visibility: visible;
+}
+
+.rect-5:hover+.rect-6 {
+    visibility: visible;
+}
+
+.rect-6 {
+    height: 50px;
+    width: 75px;
+    margin: -35px 0 0 975px;
+    border-radius: 15px 0 0 15px;
+}
+
+.rect-6:hover {
+    visibility: visible;
+}
+
+.rect-6:hover+.rect-7 {
+    visibility: visible;
+}
+
+.rect-7 {
+    margin: -50px 0 0 1050px;
+    height: 350px;
+    width: 15px;
+
+    border-radius: 0 15px 15px 0;
+}
+
+.rect-7:hover {
+    visibility: visible;
+}
+
+.rect-7:hover+.rect-8 {
+    visibility: visible;
+}
+
+.rect-8 {
+    width: 150px;
+    height: 25px;
+    margin: -25px 0 50px 901px;
+}
+
+.rect-8:hover {
+    visibility: visible;
+}
+
+.rect-8:hover+.rect-9 {
+    visibility: visible;
+}
+
+.rect-9 {
+    height: 250px;
+    width: 50px;
+    margin: -300px 0 0 851px;
+    border-radius: 0 15px 0 15px;
+}
+
+.rect-9:hover {
+    visibility: visible;
+}
+
+.rect-9:hover+.rect-10 {
+    visibility: visible;
+}
+
+.rect-10 {
+    width: 500px;
+    height: 30px;
+    margin: -250px 0 0 351px;
+}
+
+.rect-10:hover {
+    visibility: visible;
+}
+
+.rect-10:hover+.rect-11 {
+    visibility: visible;
+}
+
+.rect-11 {
+    height: 450px;
+    width: 90px;
+    margin: -30px 0 0 271px;
+    border-radius: 15px 0 0 15px;
+    background-color: red;
+
+    background-color: transparent;
+    border-right: 70px solid transparent;
+    border-left: 0 solid transparent;
+    border-top: 430px solid #e4e462;
+}
+
+.rect-11:hover {
+    visibility: visible;
+}
+
+.rect-11:hover+.rect-12 {
+    visibility: visible;
+}
+
+.rect-12 {
+    width: 720px;
+    height: 25px;
+    margin: -25px 0 0 271px;
+    border-radius: 0 0 0 15px;
+}
+
+.rect-12:hover {
+    visibility: visible;
+}
+
+.rect-12:hover+.rect-13 {
+    visibility: visible;
+}
+
+.rect-13 {
+    height: 370px;
+    width: 25px;
+    margin: -370px 0 0 980px;
+    border-radius: 0 15px 15px 0;
+}
+
+.rect-13:hover {
+    visibility: visible;
+}
+
+.rect-13:hover+.rect-14 {
+    visibility: visible;
+}
+
+.rect-14 {
+    background-color: transparent;
+    margin: -370px 0 0 50px;
+    height: 100px;
+    width: 700px;
+    border-top: 55px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 930px solid #e4e462;
+}
+
+.rect-14:hover {
+    visibility: visible;
+}
+
+.rect-14:hover+.rect-15 {
+    visibility: visible;
+}
+
+.rect-15 {
+    height: 280.5px;
+    width: 50px;
+    margin: -45.5px 0 0 25px;
+    border-radius: 15px 0 0;
+}
+
+.rect-15:hover {
+    visibility: visible;
+}
+
+.rect-15:hover+.rect-16 {
+    visibility: visible;
+}
+
+.rect-16 {
+    padding: 15px;
+    width: 250px;
+}
+
+.rect-16:hover {
+    visibility: visible;
+    background-color: #0a8ae0;
+}
+
+.rect-16:hover+.boo {
+    visibility: visible;
+}
+
+.boo {
+    background-image: url(../img/boo.jpg);
+    width: 500px;
+    height: 500px;
+    margin: -550px 0 0 350px;
+}
+
+/* ----------FOOTER---------- */
+
+.footer {
+    padding: 50px 0;
+    background-color: #412672;
+}
