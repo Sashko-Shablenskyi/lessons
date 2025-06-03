@@ -1,0 +1,92 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+
+body {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0;
+}
+
+img {
+    font-size: 16px;
+}
+
+.header,
+.footer {
+    font-size: 28px;
+    text-align: right;
+    padding: 25px 0;
+}
+
+.wrapper {
+    background-color: rgba(135, 135, 133, 0.5);
+}
+
+.container {
+    max-width: 1399px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title,
+.subtitle {
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 32px;
+}
+
+.box {
+    display: inline-block;
+    padding: 0 15px 15px 0;
+    vertical-align: top;
+}
+
+.box-inner {
+    display: inline-block;
+    padding: 5px;
+}
+
+.icons,
+.content-icons,
+.png,
+.content-raster {
+    margin-bottom: 55px;
+}
+
+.icons-wrapper,
+.content-icons-wrapper {
+    margin: 0 -15px -15px 0;
+}
+
+.content-icons-wrapper {
+    max-width: 500px;
+    min-width: 290px;
+}
+
+.icons-wrapper img {
+    width: 50px;
+    height: 50px;
+}
+
+.content-icons-wrapper img,
+.content-icons-wrapper svg {
+    width: 84px;
+    height: 84px;
+}
+
+.border-radius {
+    border-radius: 26.92% 0;
+    overflow: hidden;
+    max-width: 557px;
+
+}
+
+.content-raster-wrapper img {
+    margin-bottom: 15px;
+}
