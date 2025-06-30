@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header">
+        <div class="header__container">
+          <ul class="nav">
+            <div class="nav__item">
+              <a href="#properties" class="nav__link">Properties</a>
+            </div>
+            <div class="nav__item">
+              <a href="#hummer" class="nav__link">HMMWV</a>
+            </div>
+          </ul>
+
+        </div>
+      </header>
+
+      <main class="main">
+
+        <div class="properties" id="properties">
+          <div class="properties__container">
+            <h1 class="title title--mb-25">Lesson 11</h1>
+
+            <h2 class="subtitle subtitle--mb-50">Properties</h2>
+
+            <ul class="properties__wrapper">
+              <li class="box">
+                <div class="box__inner box__inner--translated">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : translate(15px, 20px);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--scaled">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : scale(0.7, 1.3);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--rotated">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : rotate(45deg);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--skewed">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : skew(-15deg, -20deg);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class=" box__inner box__inner--matrixed">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : matrix(2, 0.7, -0.4, 0.5, -50, 1);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--multiple-2D-transformed">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : skew(30deg) rotate(180deg) scale(1.5);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--transform-origin">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    transform-origin: 50px 150px;
+                    transform: rotate(-135deg);
+                  </p>
+                </div>
+              </li>
+
+              <li class="box">
+                <div class="box__inner  box__inner--translated3d">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : translate3d(10px, 15px, -30px);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--scaled3d">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : scale3d(2, 0.5, 3);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--rotated3d">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : rotate3d(2, 10, 15, 95deg);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--matrixed3d">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : matrix3d(1, 0, 0.00, -0.005, 0.00, 1, 0.00, 0.005, 0, 0,
+                    1, 0, 0, 0, 0, 1);
+                  </p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="box__inner box__inner--multiple-3D-transformed">
+                  <div class="box__elem">
+                    <div class="box__elem-inner"></div>
+                  </div>
+                  <p class="box__descr">
+                    : translate3d(50px, 40px, -40px) rotate3d(50, 2, 1, 50deg);
+                  </p>
+                </div>
+              </li>
+
+              <li class="box">
+                <div class="box__inner box__inner--backface-visibidivty">
+                  <div class="box__elem box__elem--double">
+                    <div class="box__elem-inner"></div>
+                    <div class="box__elem-inner--backface"></div>
+                  </div>
+                  <p class="box__descr">
+                    backface-visibility: hidden;
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hummer" id="hummer">
+          <div class="hummer__container">
+            <h2 class="subtitle subtitle--mb-50">HMMWV</h2>
+
+            <div class="hummer__wrapper">
+              <div class="car">
+
+                <div class="car__wheel wheel">
+                  <div class="wheel__inner"></div>
+                </div>
+                <div class="car__wheel wheel wheel--front">
+                  <div class="wheel__inner"></div>
+                </div>
+
+                <div class="bumper bumper--front">
+                  <div class="bumper__cover"></div>
+                  <div class="bumper__headlight"></div>
+                </div>
+                <div class="bumper bumper--back"></div>
+
+                <div class="hood">
+                  <div class="hood__ring"></div>
+                </div>
+
+                <div class="trunk"></div>
+
+                <div class="bottom"></div>
+
+                <div class="cabin">
+                  <div class="door door--front">
+                    <div class="door__fastening"></div>
+                    <div class="door__window"></div>
+                    <div class="door__handle"></div>
+                  </div>
+
+                  <div class="door door--back">
+                    <div class="door__fastening"></div>
+                    <div class="door__window"></div>
+                    <div class="door__handle"></div>
+                  </div>
+
+                </div>
+
+                <div class="cataphot"></div>
+                <div class="cataphot cataphot--back"></div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
