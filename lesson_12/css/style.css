@@ -1,0 +1,488 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+@import url('keyframes.css');
+
+/* ----------General---------- */
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* ----------Scene---------- */
+
+.scene {
+    position: relative;
+    background: url(../img/grass_bg.jpg) center/cover no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+
+}
+
+/* ----------Scene---------- */
+/* -----ladybug----- */
+.ladybug {
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    width: 75px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: rotate(65deg);
+
+    animation: ladybug-movement 25s linear infinite;
+}
+
+.ladybug__head {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.antennae-ladybug {
+    position: absolute;
+    top: -15px;
+    height: 50px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.antennae-ladybug--left {
+    border-right: 2px solid #000;
+    left: -20px;
+}
+
+.antennae-ladybug--right {
+    border-left: 2px solid #000;
+    right: -20px;
+}
+
+.antennae-ladybug--right::after,
+.antennae-ladybug--left::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.antennae-ladybug--left::before {
+    right: 11px;
+}
+
+.antennae-ladybug--right::after {
+    left: 11px;
+}
+
+.ladybug__legs {
+    width: 45px;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+}
+
+.ladybug__legs--left {
+    left: -35px;
+}
+
+.leg-ladybug {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    border-top: 3px solid #000;
+    border-radius: 50%;
+}
+
+.leg-ladybug--1,
+.leg-ladybug--2,
+.leg-ladybug--3 {
+    right: 0;
+    transform-origin: right top;
+    animation: legs-movement .4s infinite linear alternate;
+}
+
+.leg-ladybug--1 {
+    top: 0;
+    transform: translate(3px, 8px);
+}
+
+.leg-ladybug--2 {
+    top: 35%;
+    right: 3px;
+    animation-direction: alternate-reverse;
+
+}
+
+.leg-ladybug--3 {
+    bottom: -10px;
+}
+
+.ladybug__legs--right {
+    right: -40px;
+}
+
+.leg-ladybug--4,
+.leg-ladybug--5,
+.leg-ladybug--6 {
+    transform-origin: left top;
+    animation: legs-movement .4s infinite linear alternate;
+
+}
+
+.leg-ladybug--4 {
+    top: 0;
+}
+
+.leg-ladybug--5 {
+    top: 35%;
+    animation-direction: alternate-reverse;
+}
+
+.leg-ladybug--6 {
+    bottom: -10px;
+    transform: rotate(15deg) translate(-4px, -8px);
+}
+
+.ladybug__back::before,
+.ladybug__back::after {
+    content: '';
+    background-color: red;
+    height: 100px;
+    width: 55%;
+    border-radius: 50%;
+    border-radius: 100% 0% 0% 100% / 45% 50% 50% 55%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.ladybug__back::before {
+    left: 0;
+    transform: rotate(5deg) translatex(-3px);
+}
+
+.ladybug__back::after {
+    right: 0;
+    transform: rotate(174deg) translatex(-6px);
+}
+
+.ladybug__dot {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.ladybug__dot::after,
+.ladybug__dot::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ladybug__dot::after {
+    top: -25px;
+}
+
+.ladybug__dot::before {
+    bottom: -25px;
+}
+
+.ladybug__dot--left {
+    left: 12%;
+}
+
+.ladybug__dot--right {
+    right: 8%;
+}
+
+.ladybug__dot--left::after,
+.ladybug__dot--left::before {
+    left: 10px;
+}
+
+.ladybug__dot--right::after {
+    right: 12px;
+}
+
+.ladybug__dot--right::before {
+    right: 7px;
+}
+
+/* -----ant----- */
+
+.ant {
+    position: absolute;
+    bottom: -150px;
+    right: 20%;
+    width: 40px;
+    height: 120px;
+}
+
+.ant--one {
+    animation: ant-movement linear 15s 1s infinite;
+
+}
+
+.ant--two {
+    animation: ant-movement linear 15s 2.5s infinite;
+}
+
+.ant--three {
+    animation: ant-movement linear 15s 4s infinite;
+}
+
+.ant--four {
+    animation: ant-movement linear 15s 5.5s infinite;
+}
+
+.ant--five {
+    animation: ant-movement linear 15s 7s infinite;
+}
+
+.ant__head {
+    width: 25px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ant__mouth {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ant__mouth--left {
+    border-left: 2px solid #000;
+}
+
+.ant__mouth--right {
+    border-right: 2px solid #000;
+
+}
+
+.ant__body {
+    width: 15px;
+    height: 45px;
+    background-color: #000;
+    border-radius: 50% 50% 50% 50% / 32% 32% 68% 68%;
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ant__legs {
+    width: 25px;
+    height: 100%;
+}
+
+.leg-ant {
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 2px solid #000;
+}
+
+.ant__legs--left,
+.ant__legs--right {
+    position: absolute;
+    top: 5px;
+}
+
+.ant__legs--left {
+    left: -23px;
+}
+
+.ant__legs--right {
+    right: -23px;
+}
+
+.leg-ant--1,
+.leg-ant--2,
+.leg-ant--3 {
+    transform-origin: right top;
+    animation: legs-movement-small .4s infinite linear alternate;
+}
+
+.leg-ant--4,
+.leg-ant--5,
+.leg-ant--6 {
+    transform-origin: left top;
+    animation: legs-movement-small .4s infinite linear alternate;
+}
+
+
+.leg-ant--2,
+.leg-ant--4 {
+    top: 10px;
+    animation-direction: alternate-reverse;
+}
+
+.leg-ant--3,
+.leg-ant--6 {
+    top: 20px;
+}
+
+.ant__ass {
+    width: 30px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50% 50% 50% 50% / 32% 32% 68% 68%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+/* -----dragonfly----- */
+.dragonfly {
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    width: 80px;
+
+    animation: dragonfly-movement 15s 3s infinite linear;
+}
+
+.dragonfly__head {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+    background-color: orange;
+    border: 1px solid #000;
+    z-index: 3;
+}
+
+.dragonfly__eye {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 35px;
+    left: -8px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    z-index: 5;
+}
+
+.dragonfly__eye::before {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 5px orange;
+
+    animation: dragonfly-eye-moove 3s infinite;
+}
+
+.dragonfly__eye--right {
+    left: unset;
+    right: -8px;
+}
+
+.dragonfly__smile {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 40px;
+    border-top: 3px solid #000;
+    border-radius: 35px;
+}
+
+.dragonfly__body {
+    position: relative;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    z-index: 2;
+}
+
+.dragonfly__wings {
+    position: absolute;
+    top: 45px;
+    left: -195px;
+    width: 200px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: orange;
+    transform-origin: right;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    animation: dragonfly-wings-moove .1s infinite;
+}
+
+.dragonfly__wings--right {
+    left: unset;
+    right: -195px;
+    transform-origin: left;
+}
+
+.dragonfly__wings--small {
+    width: 190px;
+    height: 25px;
+    top: 70px;
+    left: -185px;
+
+    animation: dragonfly-wings-moove .1s .5s infinite;
+
+}
+
+.dragonfly__wings--right.dragonfly__wings--small {
+    left: unset;
+    right: -185px;
+}
+
+.dragonfly__tail {
+    position: relative;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orange;
+    width: 15px;
+    height: 180px;
+    border-radius: 15px;
+    border: 1px solid #000;
+
+}
