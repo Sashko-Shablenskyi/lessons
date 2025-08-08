@@ -1,0 +1,235 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+[class*='__container'] {
+    display: flex;
+    flex-direction: column;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.title {
+    color: #fff;
+    font-size: 38px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.staff {
+    background-color: #412672;
+    padding: 61px 0 120px;
+}
+
+.staff__container {
+    gap: 31px;
+}
+
+
+.staff__wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background-color: #fff;
+    flex: 1 1 385px;
+    font-size: 15px;
+    line-height: 126.667%;
+    box-shadow: 0 384px 108px 0 rgba(0, 0, 0, 0.00), 0 246px 98px 0 rgba(0, 0, 0, 0.01), 0 138px 83px 0 rgba(0, 0, 0, 0.05), 0 62px 62px 0 rgba(0, 0, 0, 0.09), 0 15px 34px 0 rgba(0, 0, 0, 0.10);
+    transition: background-color .3s;
+}
+
+.card:hover {
+    background-color: #FFBE48;
+}
+
+.card__img {
+    overflow: hidden;
+}
+
+.card__img img {
+    width: 100%;
+    transition: transform .3s;
+
+}
+
+.card:hover .card__img img {
+    transform: scale(1.05);
+}
+
+.card__content {
+    flex-grow: 1;
+}
+
+.card__content *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.card__title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card__descr {
+    color: #4F4F4F;
+}
+
+.card__link {
+    position: relative;
+    color: #FE3F3F;
+    align-self: start;
+}
+
+.card__link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FE3F3F;
+    transition: width .3s;
+}
+
+.card__link:hover.card__link::before {
+    width: 75%;
+}
+
+
+.benefits {
+    padding: 55px 0 72px;
+    overflow: clip;
+}
+
+.benefits__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.benefits__wrapper> :first-child {
+    max-width: 518px;
+}
+
+.benefits__column> :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.benefits__column> :first-child:not(:only-child) {
+    margin-top: 98px;
+}
+
+.benefits__title {
+    color: #412672;
+    font-size: 34px;
+}
+
+.benefits__descr {
+    color: #412672;
+    font-size: 22px;
+}
+
+.list-benefits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+    color: #4F4F4F;
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+.list-benefits-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.list-benefits-item::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../img/done.svg) center/ cover no-repeat;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.benefits__img {
+    max-width: 764px;
+    margin-right: -172px;
+}
+
+.benefits__img img {
+    width: 100%;
+}
+
+.achievements {
+    padding: 70px 0;
+    background-color: #412672;
+    color: #fff;
+}
+
+.achievements__container {
+    gap: 30px;
+}
+
+.achievements__title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.achievements__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.item-achievement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 275px;
+}
+
+.item-achievement__img {
+    flex: 0 0 70px;
+}
+
+.item-achievement__content {
+    flex-grow: 0;
+}
+
+.item-achievement__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1
+}
+
+.item-achievement__descr {
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
