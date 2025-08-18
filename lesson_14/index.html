@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson </title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header">
+        <div class="header__container">
+          header
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="bill-info">
+          <div class="bill-info__container">
+            <form action="#" class="form">
+              <div class="form__main">
+                <h1 class="title">Billing Information</h1>
+                <div class="row">
+                  <div class="input-box">
+                    <label for="client-first-name">First name</label>
+                    <input
+                      id="client-first-name"
+                      placeholder="Your first name"
+                      type="text"
+                      minlength="3"
+                      required>
+                  </div>
+
+                  <div class="input-box">
+                    <label for="client-last-name">Last name</label>
+                    <input
+                      id="client-last-name"
+                      placeholder="Your last name"
+                      type="text"
+                      minlength="3"
+                      required>
+                  </div>
+
+                  <div class="input-box">
+                    <label for="company-name">Company Name (optional)</label>
+                    <input
+                      id="company-name"
+                      placeholder="Company name"
+                      type="text">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-box">
+                    <label for="street-address">Street Address</label>
+                    <input
+                      id="street-address"
+                      placeholder="Street Address"
+                      type="text"
+                      required
+                      autocomplete="on">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-box">
+                    <label for="country">Country / Region</label>
+                    <select id="country" required
+                      autocomplete="off">
+                      <option value disabled selected hidden>Select</option>
+                      <option>Ukraine</option>
+                      <option>USA</option>
+                      <option>Canada</option>
+                      <option>Germany</option>
+                    </select>
+                  </div>
+
+                  <div class="input-box">
+                    <label for="states">States</label>
+                    <select id="states" required>
+                      <option value disabled selected hidden>Selects</option>
+                      <option value="autonomous-republic-of-crimea">
+                        AR of Crimea
+                      </option>
+                      <option value="chernihiv-region">
+                        Chernihiv Region
+                      </option>
+                      <option value="chernivtsi-region">
+                        Chernivtsi Region
+                      </option>
+                      <option value="cherkasy-region">
+                        Cherkasy Region
+                      </option>
+                      <option value="dnipro-region">
+                        Dnipro Region
+                      </option>
+                      <option value="donetsk-region">
+                        Donetsk Region
+                      </option>
+                      <option value="ivano-frankivsk-region">
+                        Ivano-Frankivsk Region
+                      </option>
+                      <option value="kharkiv-region">
+                        Kharkiv Region
+                      </option>
+                      <option value="kherson-region">
+                        Kherson Region
+                      </option>
+                      <option value="khmelnytskyi-region">
+                        Khmelnytskyi Region
+                      </option>
+                      <option value="kirovohrad-region">
+                        Kirovohrad Region
+                      </option>
+                      <option value="kyiv-region">
+                        Kyiv Region
+                      </option>
+                      <option value="lviv-region">
+                        Lviv Region
+                      </option>
+                      <option value="kyiv-city">
+                        Kyiv City
+                      </option>
+                      <option value="sevastopol-city">
+                        Sevastopol City
+                      </option>
+                      <option value="mykolaiv-region">
+                        Mykolaiv Region
+                      </option>
+                      <option value="odesa-region">
+                        Odesa Region
+                      </option>
+                      <option value="poltava-region">
+                        Poltava Region
+                      </option>
+                      <option value="rivne-region">
+                        Rivne Region
+                      </option>
+                      <option value="sumy-region">
+                        Sumy Region
+                      </option>
+                      <option value="ternopil-region">
+                        Ternopil Region
+                      </option>
+                      <option value="vinnytsia-region">
+                        Vinnytsia Region
+                      </option>
+                      <option value="volyn-region">
+                        Volyn Region
+                      </option>
+                      <option value="zakarpattia-region">
+                        Zakarpattia Region
+                      </option>
+                      <option value="zaporizhzhia-region">
+                        Zaporizhzhia Region
+                      </option>
+                      <option value="zhytomyr-region">
+                        Zhytomyr Region
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="input-box">
+                    <label for="zip-code">Zip Code</label>
+                    <input
+                      id="zip-code"
+                      placeholder="Zip Code"
+                      type="text">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-box">
+                    <label for="client-email">Email</label>
+                    <input
+                      id="client-email"
+                      placeholder="Email Address"
+                      type="email"
+                      required>
+                  </div>
+
+                  <div class="input-box">
+                    <label for="client-phone">Phone</label>
+                    <input
+                      id="client-phone"
+                      placeholder="Phone number"
+                      type="tel"
+                      required>
+                  </div>
+                </div>
+
+                <div class="row row--mb-32 different-address">
+                  <input id="different-address" type="checkbox">
+                  <label for="different-address">
+                    Ship to a different address
+                  </label>
+                </div>
+
+                <div class="devider devider--mb-32"></div>
+
+                <h2 class="title">
+                  Additional Info
+                </h2>
+
+                <label for="textarea-notes">
+                  Order Notes (Optional)
+                </label>
+
+                <textarea
+                  name="form[]"
+                  id="textarea-notes"
+                  placeholder="Notes about your order, e.g. special notes for delivery">
+                </textarea>
+              </div>
+
+              <aside class="basket">
+                <div class="order">
+                  <h2 class="title">Order Summery</h2>
+                  <ul class="order__list">
+                    <li class="order__item item-order">
+                      <div class="item-order__img">
+                        <a href="#">
+                          <img src="img/green-capsicum.png"
+                            alt="green capsicum">
+                        </a>
+                      </div>
+                      <div class="item-order__name">
+                        <a href="#"> Green Capsicum</a>
+                      </div>
+                      <div class="item-order__count">x5</div>
+                      <div
+                        class="item-order__price item-order__price--ml-a">
+                        $70.00
+                      </div>
+                    </li>
+
+                    <li class="order__item item-order">
+                      <div class="item-order__img">
+                        <a href="#">
+                          <img src="img/red-capsicum.png" alt="red capsicum">
+                        </a>
+                      </div>
+
+                      <div class="item-order__name">
+                        <a href="#">Red Capsicum</a>
+                      </div>
+                      <div class="item-order__count">x1</div>
+                      <div
+                        class="item-order__price item-order__price--ml-a">
+                        $14.00
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="row row--mb-13 row--fw-nw">
+                    <div class="subtotal-title">Subtotal:</div>
+                    <div
+                      class="subtotal-price subtotal-price--ml-a">$84.00</div>
+                  </div>
+
+                  <div class="devider devider--mb-13"></div>
+
+                  <div class="row row--mb-13 row--fw-nw">
+                    <div class="shipping-title">Shipping:</div>
+                    <div
+                      class="shipping-price shipping-price--ml-a">Free</div>
+                  </div>
+
+                  <div class="devider devider--mb-13"></div>
+
+                  <div class="row row--fw-nw">
+                    <div class="total-title">Total:</div>
+                    <div
+                      class="total-price total-price--ml-a">$84.00</div>
+                  </div>
+                </div>
+
+                <div class="payment-method">
+                  <h3 class="title">
+                    Payment Method
+                  </h3>
+
+                  <ul class="radio">
+                    <li class="radio__item">
+                      <input
+                        class="radio__input"
+                        type="radio"
+                        name="form[]"
+                        value="cash-on-delivery"
+                        id="cash-on-delivery">
+                      <label
+                        class="radio__label"
+                        for="cash-on-delivery">
+                        Cash on Delivery
+                      </label>
+                    </li>
+                    <li class="radio__item">
+                      <input
+                        class="radio__input"
+                        type="radio"
+                        name="form[]"
+                        value="paypal"
+                        id="paypal">
+                      <label
+                        class="radio__label"
+                        for="paypal">
+                        Paypal
+                      </label>
+                    </li>
+                    <li class="radio__item">
+                      <input
+                        class="radio__input"
+                        type="radio"
+                        name="form[]"
+                        value="amazon-pay"
+                        id="amazon-pay">
+                      <label
+                        class="radio__label"
+                        for="amazon-pay">
+                        Amazon Pay
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <button class="submit-btn" type="submit">Place Order</button>
+
+              </aside>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          footer
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
