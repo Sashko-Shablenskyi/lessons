@@ -1,0 +1,74 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+@import url('components/title/title.css');
+@import url('components/link/link.css');
+@import url('components/product-card/product-card.css');
+@import url('components/product-card/product-card-media.css');
+@import url('components/card-news/card-news.css');
+@import url('components/card-news/card-news-media.css');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1A1A1A;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 1px #00B207 solid;
+    outline-offset: 3px;
+}
+
+[class*='__container'] {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/* ----------featuder-products---------- */
+
+.featuder-products {
+    padding: 60px 0;
+}
+
+.featuder-products__header {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.featuder-products__header a {
+    flex-shrink: 0;
+}
+
+.featuder-products__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ----------news-section---------- */
+
+.news-section {
+    padding-bottom: 60px;
+}
+
+.news-section__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.news-section__title {
+    margin-bottom: 32px;
+}

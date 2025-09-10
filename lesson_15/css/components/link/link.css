@@ -1,0 +1,16 @@
+.link {
+    display: inline-flex;
+    gap: 12px;
+    color: #00B207;
+    font-weight: 500;
+    line-height: 1.5;
+    transition: gap .3s;
+}
+
+.link img {
+    transition: transform .4s;
+}
+
+.link:hover img {
+    transform: rotateX(180deg);
+}
