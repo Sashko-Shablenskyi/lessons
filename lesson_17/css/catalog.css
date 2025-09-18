@@ -1,0 +1,211 @@
+.catalog {
+    font-family: "KoPub Batang";
+    background-color: #F8F3EC;
+    padding: 89px 0 100px;
+}
+
+.catalog__container {
+    max-width: 1230px;
+}
+
+.catalog__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px 30px;
+}
+
+.catalog__aside {
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    padding-bottom: 10px;
+    flex: 1 1 400px;
+}
+
+.catalog__main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 370px));
+    gap: 37px 30px;
+    padding-top: 52px;
+    align-self: start;
+}
+
+.catalog__title {
+    font-size: 60px;
+    font-weight: 300;
+    grid-column: span 2;
+    margin-bottom: 41px;
+}
+
+.catalog__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 30px;
+    background-color: #DBCCBA;
+    color: #2C2C2C;
+    font-size: 17px;
+    line-height: 1.377;
+
+    outline: 1px solid #DBCCBA;
+    outline-offset: 10px;
+    min-width: 184px;
+    margin-left: 10px;
+
+    transition: outline-width .3s, outline-offset .3s;
+}
+
+.catalog__btn::after {
+    content: '';
+    background: url(../img/icons/arrow.png) center/ cover no-repeat;
+    width: 23px;
+    height: 14px;
+    transition: transform .6s;
+}
+
+.flower-card {
+    display: grid;
+    grid-template-columns: 1fr 20px 20px;
+    grid-template-rows: auto 1fr;
+    gap: 14px;
+}
+
+.flower-card--big {
+    grid-template-columns: 1fr 23px 23px;
+    margin-bottom: 14px;
+}
+
+.flower-card--big:last-of-type {
+    margin-bottom: 60px;
+}
+
+.flower-card--big .flower-card__img img {
+    aspect-ratio: 400 / 429;
+}
+
+.flower-card__img {
+    grid-column: span 3;
+    aspect-ratio: 370 / 378;
+    overflow: clip;
+    background-color: #bababa;
+}
+
+.flower-card__img img {
+    aspect-ratio: 370 / 378;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+}
+
+.flower-card__title {
+    color: #2C2C2C;
+    font-size: 20px;
+    justify-self: start;
+}
+
+.flower-card__title {
+    position: relative;
+}
+
+.flower-card__title::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgba(44, 44, 44, 0.7);
+    position: absolute;
+    bottom: -3px;
+    left: 40%;
+    transition: width .3s, left .3s;
+}
+
+.flower-card__price {
+    color: #4E4E4E;
+    font-size: 18px;
+}
+
+.flower-card__favorite,
+.flower-card__cart {
+    align-self: start;
+}
+
+/* ----------Hover---------- */
+@media (any-hover: hover),
+(pointer: fine) {
+    .flower-card:hover .flower-card__img img {
+        transform: scale(1.1);
+    }
+
+    .flower-card__title:hover::after {
+        width: 80%;
+        left: 0;
+    }
+
+    .catalog__btn:hover {
+        outline-width: 10px;
+        outline-offset: 0;
+    }
+
+    .catalog__btn:hover::after {
+        transform: rotateX(180deg);
+    }
+}
+
+
+/* ----------Media---------- */
+
+@media (max-width: 955px) {
+    .catalog__main {
+        padding-top: 0;
+    }
+
+    .catalog__title {
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    .catalog__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .catalog__aside {
+        display: grid;
+    }
+
+    .catalog__main,
+    .catalog__aside {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: 15px 15px;
+    }
+
+    .catalog__btn {
+        justify-self: start;
+    }
+
+    .flower-card--big:last-of-type {
+        margin-bottom: 14px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .catalog {
+        padding: 55px 0;
+    }
+
+    .catalog__title {
+        grid-column: auto;
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .catalog__main,
+    .catalog__aside {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog__btn {
+        justify-self: stretch;
+        justify-content: center;
+    }
+}

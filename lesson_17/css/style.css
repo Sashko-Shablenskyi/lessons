@@ -1,0 +1,19 @@
+@import url('zeroing.css');
+@import url('fonts.css');
+@import url('catalog.css');
+@import url('products.css');
+
+[class*='__container'] {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
