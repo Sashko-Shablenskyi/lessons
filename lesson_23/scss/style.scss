@@ -1,0 +1,36 @@
+@use "sass:math";
+@use "_reset.scss";
+@use "_mixins.scss" as *;
+
+body {
+	background-color: #333;
+	color: #fff;
+}
+
+[class*="__container"] {
+	max-width: 500px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.some {
+	position: relative;
+}
+
+.button {
+	padding: 15px;
+	background-color: #dcffc3;
+	display: block;
+	color: #000;
+}
+
+.link {
+	padding: 5px;
+	margin: 25px 0;
+	color: rgb(119, 216, 137);
+
+	&--error {
+		color: red;
+	}
+}
